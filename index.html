@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0078)file:///Users/rodrigohernandez/Downloads/informe_ventas_enlace_canarias_2.html -->
+<!-- saved from url=(0078)file:///Users/rodrigohernandez/Downloads/informe_ventas_enlace_canarias_3.html -->
 <html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -243,6 +243,47 @@ table.data tr:not(.total-row):hover td{background:#f5f6ff}
   </div>
 
   <div class="card">
+    <div class="card-title">Comparativa 2025 vs 2026 acumulado (por cliente)</div>
+    <p style="font-size:11px;color:#6b7280;margin-bottom:1rem;">Kg 2025 = Total anual 2025 / 3 &nbsp;|&nbsp; Base de comparacion equivalente al periodo acumulado de 2026 (ene-may15)</p>
+    <table class="data" id="compTable">
+      <thead>
+        <tr>
+          <th style="width:36%;text-align:left">Cliente</th>
+          <th id="compH25" onclick="sortComp(1)">Kg 2025 (equiv.) <span class="sa">↕</span></th>
+          <th id="compH26" onclick="sortComp(2)">Kg 2026 (acum.) <span class="sa">↕</span></th>
+          <th onclick="sortComp(3)">Dif Kg <span class="sa">↕</span></th>
+          <th onclick="sortComp(4)">% Dif <span class="sa">↕</span></th>
+        </tr>
+      </thead>
+      <tbody id="compBody">
+        <tr data-y25e="34925" data-y26="62641" data-name="Comercial Jesuman, S.A."><td>Comercial Jesuman, S.A.</td><td id="cy25_0">34.925</td><td id="cy26_0">62.641</td><td id="cdif_0" class="pos-big">+27.716</td><td id="cpct_0" class="pos-big">+79.4%</td></tr>
+        <tr data-y25e="33947" data-y26="-6707" data-name="Cafes Careca SL"><td>Cafes Careca SL</td><td id="cy25_1">33.947</td><td id="cy26_1">-6707</td><td id="cdif_1" class="neg">-40.654</td><td id="cpct_1" class="neg">-119.8%</td></tr>
+        <tr data-y25e="21195" data-y26="0" data-name="Cashdiplo, S.L.U."><td>Cashdiplo, S.L.U.</td><td id="cy25_2">21.195</td><td id="cy26_2">0</td><td id="cdif_2" class="neg">-21.195</td><td id="cpct_2" class="neg">-100.0%</td></tr>
+        <tr data-y25e="17920" data-y26="64660" data-name="Emicela SA"><td>Emicela SA</td><td id="cy25_3">17.920</td><td id="cy26_3">64.660</td><td id="cdif_3" class="pos-big">+46.740</td><td id="cpct_3" class="pos-big">+260.8%</td></tr>
+        <tr data-y25e="21504" data-y26="21504" data-name="Tirma, S.A."><td>Tirma, S.A.</td><td id="cy25_4">21.504</td><td id="cy26_4">21.504</td><td id="cdif_4" class="">+0</td><td id="cpct_4" class="">+0.0%</td></tr>
+        <tr data-y25e="14368" data-y26="10944" data-name="Comercial Dulpan SL"><td>Comercial Dulpan SL</td><td id="cy25_5">14.368</td><td id="cy26_5">10.944</td><td id="cdif_5" class="neg">-3424</td><td id="cpct_5" class="neg">-23.8%</td></tr>
+        <tr data-y25e="-2626" data-y26="0" data-name="Templo Food Services SLU"><td>Templo Food Services SLU</td><td id="cy25_6">-2626</td><td id="cy26_6">0</td><td id="cdif_6" class="pos-big">+2626</td><td id="cpct_6" class="pos-big">+100.0%</td></tr>
+        <tr data-y25e="4702" data-y26="3733" data-name="Pricemesa SL"><td>Pricemesa SL</td><td id="cy25_7">4702</td><td id="cy26_7">3733</td><td id="cdif_7" class="neg">-969</td><td id="cpct_7" class="neg">-20.6%</td></tr>
+        <tr data-y25e="3696" data-y26="11088" data-name="Cafe Ortega SA"><td>Cafe Ortega SA</td><td id="cy25_8">3696</td><td id="cy26_8">11.088</td><td id="cdif_8" class="pos-big">+7392</td><td id="cpct_8" class="pos-big">+200.0%</td></tr>
+        <tr data-y25e="5152" data-y26="0" data-name="Kimbumbia SL"><td>Kimbumbia SL</td><td id="cy25_9">5152</td><td id="cy26_9">0</td><td id="cdif_9" class="neg">-5152</td><td id="cpct_9" class="neg">-100.0%</td></tr>
+        <tr data-y25e="3400" data-y26="3936" data-name="Intercervecera SL"><td>Intercervecera SL</td><td id="cy25_10">3400</td><td id="cy26_10">3936</td><td id="cdif_10" class="pos-big">+536</td><td id="cpct_10" class="pos-big">+15.8%</td></tr>
+        <tr data-y25e="2112" data-y26="6072" data-name="Comesa Canarias, S.L"><td>Comesa Canarias, S.L</td><td id="cy25_11">2112</td><td id="cy26_11">6072</td><td id="cdif_11" class="pos-big">+3960</td><td id="cpct_11" class="pos-big">+187.5%</td></tr>
+        <tr data-y25e="791" data-y26="0" data-name="Zumin S.L"><td>Zumin S.L</td><td id="cy25_12">791</td><td id="cy26_12">0</td><td id="cdif_12" class="neg">-791</td><td id="cpct_12" class="neg">-100.0%</td></tr>
+      </tbody>
+      <tfoot>
+        <tr class="total-row">
+          <td>TOTAL</td>
+          <td id="ctot25">161.086</td>
+          <td id="ctot26">177.871</td>
+          <td id="ctotdif">+16.785</td>
+          <td id="ctotpct">+10.4%</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+
+  <div class="card">
     <div class="section-title">Marcas presentes en el portfolio</div>
     <div class="brand-tags">
       <span class="brand-tag">J&amp;M</span><span class="brand-tag">Niña de Canarias</span>
@@ -300,6 +341,58 @@ function applyFilters(){const rows=document.querySelectorAll('#tableBody tr');le
 let sortDir=[true,true,true,true,true];
 function sortTable(col){const tbody=document.getElementById('tableBody');const allRows=[...tbody.querySelectorAll('tr')];sortDir[col]=!sortDir[col];document.querySelectorAll('table.data th').forEach((th,i)=>{th.classList.toggle('sorted',i===col);const s=th.querySelector('.sa');if(s)s.textContent=i===col?(sortDir[col]?'\u2191':'\u2193'):'\u2195';});allRows.sort((a,b)=>{if(col===0){const va=a.dataset.name||'',vb=b.dataset.name||'';return sortDir[col]?va.localeCompare(vb):vb.localeCompare(va);}else{const keys=[null,'y24','y25','y26'];const va=parseFloat(a.dataset[keys[col]])||0,vb=parseFloat(b.dataset[keys[col]])||0;return sortDir[col]?va-vb:vb-va;}});allRows.forEach(r=>tbody.appendChild(r));}
 updateTopChart();applyFilters();
+
+// COMPARATIVE TABLE
+function fmtN(n){return Math.round(n).toLocaleString('es');}
+function renderCompTable(){
+  const rows=document.querySelectorAll('#compBody tr');
+  let t25=0,t26=0;
+  rows.forEach((row,i)=>{
+    const y25e=parseFloat(row.dataset.y25e)||0;
+    const y26=parseFloat(row.dataset.y26)||0;
+    const dif=y26-y25e;
+    const pct=y25e!==0?(dif/Math.abs(y25e)*100):null;
+    document.getElementById('cy25_'+i).textContent=fmtN(y25e);
+    document.getElementById('cy26_'+i).textContent=fmtN(y26);
+    const difCell=document.getElementById('cdif_'+i);
+    difCell.textContent=(dif>=0?'+':'')+fmtN(dif);
+    difCell.className=dif>0?'pos-big':dif<0?'neg':'';
+    const pctCell=document.getElementById('cpct_'+i);
+    if(pct!==null){pctCell.textContent=(pct>=0?'+':'')+pct.toFixed(1)+'%';pctCell.className=pct>0?'pos-big':pct<0?'neg':'';}
+    else{pctCell.textContent='—';}
+    t25+=y25e; t26+=y26;
+  });
+  const td=t26-t25;
+  const tp=t25!==0?(td/Math.abs(t25)*100):null;
+  document.getElementById('ctot25').textContent=fmtN(t25);
+  document.getElementById('ctot26').textContent=fmtN(t26);
+  document.getElementById('ctotdif').textContent=(td>=0?'+':'')+fmtN(td);
+  document.getElementById('ctotpct').textContent=tp!==null?(tp>=0?'+':'')+tp.toFixed(1)+'%':'—';
+}
+let compSortDir=[true,true,true,true,true];
+function sortComp(col){
+  const tbody=document.getElementById('compBody');
+  const allRows=[...tbody.querySelectorAll('tr')];
+  compSortDir[col]=!compSortDir[col];
+  document.querySelectorAll('#compTable th').forEach((th,i)=>{
+    th.classList.toggle('sorted',i===col);
+    const s=th.querySelector('.sa');
+    if(s)s.textContent=i===col?(compSortDir[col]?'↑':'↓'):'↕';
+  });
+  allRows.sort((a,b)=>{
+    if(col===0){return compSortDir[col]?(a.dataset.name||'').localeCompare(b.dataset.name||''):(b.dataset.name||'').localeCompare(a.dataset.name||'');}
+    let va,vb;
+    if(col===3){va=parseFloat(a.dataset.y26)-parseFloat(a.dataset.y25e);vb=parseFloat(b.dataset.y26)-parseFloat(b.dataset.y25e);}
+    else if(col===4){const da=parseFloat(a.dataset.y26)-parseFloat(a.dataset.y25e);const db=parseFloat(b.dataset.y26)-parseFloat(b.dataset.y25e);va=parseFloat(a.dataset.y25e)!==0?da/Math.abs(parseFloat(a.dataset.y25e)):0;vb=parseFloat(b.dataset.y25e)!==0?db/Math.abs(parseFloat(b.dataset.y25e)):0;}
+    else if(col===1){va=parseFloat(a.dataset.y25e)||0;vb=parseFloat(b.dataset.y25e)||0;}
+    else{va=parseFloat(a.dataset.y26)||0;vb=parseFloat(b.dataset.y26)||0;}
+    return compSortDir[col]?va-vb:vb-va;
+  });
+  allRows.forEach(r=>tbody.appendChild(r));
+  renderCompTable();
+}
+renderCompTable();
+
 </script>
 
 </body></html>
